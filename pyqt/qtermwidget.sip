@@ -69,6 +69,10 @@ signals:
     void bell(const QString& message);
     void activity();
     void silence();
+    void sendData(const char *,int);
+    void titleChanged();
+    void receivedData(const QString &text);
+    void profileChanged(const QString & profile);
 public slots:
     void copyClipboard();
     void pasteClipboard();
