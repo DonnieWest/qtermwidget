@@ -62,7 +62,6 @@ public:
     void setAutoClose(bool);
     QString title() const;
     QString icon() const;
-    void setKeyboardCursorShape(KeyboardCursorShape shape);
     void setBlinkingCursor(bool blink);
 signals:
     void finished();
