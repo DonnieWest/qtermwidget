@@ -19,8 +19,6 @@ public:
         ScrollBarRight=2
     };
 
-    using KeyboardCursorShape = Konsole::Emulation::KeyboardCursorShape;
-
     QTermWidget(int startnow = 1, QWidget *parent = 0);
     ~QTermWidget();
     void startTerminalTeletype();
@@ -66,7 +64,6 @@ public:
     QString icon() const;
     void setKeyboardCursorShape(KeyboardCursorShape shape);
     void setBlinkingCursor(bool blink);
-    void cursorChanged(Konsole::Emulation::KeyboardCursorShape cursorShape, bool blinkingCursorEnabled);
 signals:
     void finished();
     void copyAvailable(bool);
