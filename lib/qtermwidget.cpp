@@ -698,9 +698,6 @@ bool QTermWidget::isTitleChanged() const
 {
     return m_impl->m_session->isTitleChanged();
 }
-<<<<<<< HEAD
-=======
-
 void QTermWidget::setAutoClose(bool autoClose)
 {
     m_impl->m_session->setAutoClose(autoClose);
@@ -712,4 +709,3 @@ void QTermWidget::cursorChanged(Konsole::Emulation::KeyboardCursorShape cursorSh
     setKeyboardCursorShape(cursorShape);
     setBlinkingCursor(blinkingCursorEnabled);
 }
->>>>>>> 3e7f8d7... Handle DECSCUSR signals
