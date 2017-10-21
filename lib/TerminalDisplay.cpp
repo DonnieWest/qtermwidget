@@ -2997,14 +2997,14 @@ void TerminalDisplay::makeImage()
 
   // confirm that array will be of non-zero size, since the painting code
   // assumes a non-zero array length
-  Q_ASSERT( _lines > 0 && _columns > 0 );
-  Q_ASSERT( _usedLines <= _lines && _usedColumns <= _columns );
+  Q_ASSERT(_lines > 0 && _columns > 0);
+  Q_ASSERT(_usedLines <= _lines && _usedColumns <= _columns);
 
-  _imageSize=_lines*_columns;
+  _imageSize = _lines * _columns;
 
   // We over-commit one character so that we can be more relaxed in dealing with
   // certain boundary conditions: _image[_imageSize] is a valid but unused position
-  _image = new Character[_imageSize+1];
+  _image = new Character[_imageSize + 1];
 
   clearImage();
 }
